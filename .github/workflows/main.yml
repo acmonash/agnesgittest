@@ -2,11 +2,11 @@ name : First workflow
 
 # Trigger
 
-On:
+on:
   workflow_dispatch:
   push:
 
-  Jobs : 
+jobs: 
     Hello-Job:
       runs-on : ubuntu-latest
       steps:
