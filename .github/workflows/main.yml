@@ -1,0 +1,16 @@
+name : First workflow
+
+# Trigger
+
+On:
+  workflow_dispatch:
+  push:
+
+  Jobs : 
+    Hello-Job:
+      runs-on : ubuntu-latest
+      steps:
+        - name : Hello World
+          run : echo "Hello World"
+          
+  
